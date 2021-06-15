@@ -3,6 +3,7 @@
   width: 95%;
   height: 200px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .abstractColumn > h2 {
@@ -14,7 +15,7 @@
 }
 
 .abstractColumn > h2:hover {
-  color: blue;
+  color: #0080c3;
 }
 
 .abstractColumn > p {
@@ -54,7 +55,7 @@
 }
 
 .abstractColumn > .news-box > .news-text > h2:hover {
-  color: blue;
+  color: #0080c3;
 }
 
 .abstractColumn > .news-box > .news-text > p {
@@ -71,6 +72,7 @@
   width: 30%;
   margin: 1.5%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .abstractColumn > ul {
@@ -95,5 +97,5 @@
 }
 
 .abstractColumn > ul > li:hover {
-  color: blue;
+  color: #0080c3;
 }

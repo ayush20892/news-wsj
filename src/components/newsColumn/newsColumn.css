@@ -6,7 +6,7 @@
 }
 
 .newsColumn > h2:hover {
-  color: blue;
+  color: #0080c3;
 }
 
 .newsColumn > p {
@@ -57,7 +57,7 @@ p > span > small > span {
 }
 
 .newsColumn > ul > li:hover {
-  color: blue;
+  color: #0080c3;
 }
 
 .newsColumn > hr {
@@ -73,7 +73,7 @@ p > span > small > span {
 }
 
 .newsColumn > .news-box > h3:hover {
-  color: blue;
+  color: #0080c3;
 }
 
 .newsColumn > .news-box > .news-details-img {
@@ -94,6 +94,7 @@ p > span > small > span {
 .newsColumn > .news-box > .news-details-img > img {
   width: 35%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 
