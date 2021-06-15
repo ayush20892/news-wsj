@@ -1,7 +1,9 @@
 import "./abstractColumn.css"
 import { BsClock } from "react-icons/bs"
+import { Loader } from "../loader/loader"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { isCatchClause } from "typescript"
 var XMLParser = require('react-xml-parser');
 
 
@@ -22,27 +24,35 @@ export function AbstractColumn() {
   })
   useEffect(() => {
     (async () => {
-      let feed = await axios.get('https://rss.app/feeds/KAuDrp3d71np3YLs.xml');
-      var xml = new XMLParser().parseFromString(feed.data);   
+    try { 
+        setLoader(true)
+        let feed = await axios.get('https://rss.app/feeds/KAuDrp3d71np3YLs.xml');
+        var xml = new XMLParser().parseFromString(feed.data);   
 
-      setData({
-        heading1: xml.children[0].children[8].children[0].value,
-        image1: xml.children[0].children[8].children[6].attributes.url,
-        description1: xml.children[0].children[1].value,
-        heading2: xml.children[0].children[9].children[0].value,
-        image2: xml.children[0].children[9].children[6].attributes.url,
-        description2: xml.children[0].children[9].children[0].value,
-        point1: xml.children[0].children[10].children[0].value,
-        point2: xml.children[0].children[11].children[0].value,
-        point3: xml.children[0].children[12].children[0].value,
-        heading3: xml.children[0].children[13].children[0].value,
-        description3: xml.children[0].children[14].children[0].value,
-      })
+        setLoader(false)
+        setData({
+          heading1: xml.children[0].children[8].children[0].value,
+          image1: xml.children[0].children[8].children[6].attributes.url,
+          description1: xml.children[0].children[1].value,
+          heading2: xml.children[0].children[9].children[0].value,
+          image2: xml.children[0].children[9].children[6].attributes.url,
+          description2: xml.children[0].children[9].children[0].value,
+          point1: xml.children[0].children[10].children[0].value,
+          point2: xml.children[0].children[11].children[0].value,
+          point3: xml.children[0].children[12].children[0].value,
+          heading3: xml.children[0].children[13].children[0].value,
+          description3: xml.children[0].children[14].children[0].value,
+        })
+      } catch(err) {
+        setLoader(false)
+        console.error(err)
+      }
 
     })()
   },[])
   return(
-    <div className="abstractColumn">
+    <>
+    {loader ? <Loader /> : <div className="abstractColumn">
       <img src={data.image1} alt=".." />
       <h2>{data.heading1}</h2>
       <p>
@@ -90,6 +100,7 @@ export function AbstractColumn() {
           </p>
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   );
 }

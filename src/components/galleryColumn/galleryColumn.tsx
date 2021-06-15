@@ -1,5 +1,6 @@
 import "./galleryColumn.css"
 import { BsClock } from "react-icons/bs"
+import { Loader } from "../loader/loader"
 import { useEffect, useState } from "react"
 import axios from "axios"
 var XMLParser = require('react-xml-parser');
@@ -19,24 +20,32 @@ export function GalleryColumn() {
   })
   useEffect(() => {
     (async () => {
-      let feed = await axios.get('https://rss.app/feeds/UlmIWy7VEravys8Y.xml');
-      var xml = new XMLParser().parseFromString(feed.data);   
+      try { 
+        setLoader(true)
+        let feed = await axios.get('https://rss.app/feeds/UlmIWy7VEravys8Y.xml');
+        var xml = new XMLParser().parseFromString(feed.data);   
 
-      setData({
-        heading1: xml.children[0].children[8].children[0].value,
-        image1: xml.children[0].children[8].children[6].attributes.url,
-        heading2: xml.children[0].children[12].children[0].value,
-        image2: xml.children[0].children[12].children[6].attributes.url,
-        heading3: xml.children[0].children[10].children[0].value,
-        image3: xml.children[0].children[10].children[6].attributes.url,
-        heading4: xml.children[0].children[13].children[0].value,
-        image4: xml.children[0].children[13].children[6].attributes.url,
-      })
+        setLoader(false)
+        setData({
+          heading1: xml.children[0].children[8].children[0].value,
+          image1: xml.children[0].children[8].children[6].attributes.url,
+          heading2: xml.children[0].children[12].children[0].value,
+          image2: xml.children[0].children[12].children[6].attributes.url,
+          heading3: xml.children[0].children[10].children[0].value,
+          image3: xml.children[0].children[10].children[6].attributes.url,
+          heading4: xml.children[0].children[13].children[0].value,
+          image4: xml.children[0].children[13].children[6].attributes.url,
+        })
+      } catch(err) {
+        console.error(err)
+        setLoader(false)
+      }
 
     })()
   },[])
   return(
-    <div className="galleryColumn">
+    <>
+    {loader ? <Loader /> : <div className="galleryColumn">
       <div className="gallery-news">
         <img src={data.image1} alt=".." />
         <h2>{data.heading1}</h2>
@@ -75,6 +84,7 @@ export function GalleryColumn() {
           <span>3 min</span>
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   );
 }

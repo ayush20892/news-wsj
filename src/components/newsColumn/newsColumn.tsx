@@ -1,8 +1,8 @@
 import "./newsColumn.css"
 import { BsClock } from "react-icons/bs"
+import { Loader } from "../loader/loader"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import * as convert from "xml-js"
 var XMLParser = require('react-xml-parser');
 
 const image = "https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg"
@@ -25,28 +25,35 @@ export function NewsColumn() {
   })
   useEffect(() => {
     (async () => {
-      let feed = await axios.get('https://rss.app/feeds/qAPkMPjFHgmqJd82.xml');
-      var xml = new XMLParser().parseFromString(feed.data);   
-
-      setData({
-        heading1: xml.children[0].children[8].children[0].value,
-        description1: xml.children[0].children[9].children[0].value,
-        point1: xml.children[0].children[14].children[0].value,
-        point2: xml.children[0].children[15].children[0].value,
-        point3: xml.children[0].children[16].children[0].value,
-        point4: xml.children[0].children[17].children[0].value,
-        heading2: xml.children[0].children[10].children[0].value,
-        image: xml.children[0].children[10].children[6].attributes.url,
-        description2: xml.children[0].children[11].children[0].value,
-        heading3: xml.children[0].children[12].children[0].value,
-        description3: xml.children[0].children[13].children[0].value,
-      })
+      try { 
+        setLoader(true)
+        let feed = await axios.get('https://rss.app/feeds/qAPkMPjFHgmqJd82.xml');
+        var xml = new XMLParser().parseFromString(feed.data);   
+        setLoader(false)
+        setData({
+          heading1: xml.children[0].children[8].children[0].value,
+          description1: xml.children[0].children[9].children[0].value,
+          point1: xml.children[0].children[14].children[0].value,
+          point2: xml.children[0].children[15].children[0].value,
+          point3: xml.children[0].children[16].children[0].value,
+          point4: xml.children[0].children[17].children[0].value,
+          heading2: xml.children[0].children[10].children[0].value,
+          image: xml.children[0].children[10].children[6].attributes.url,
+          description2: xml.children[0].children[11].children[0].value,
+          heading3: xml.children[0].children[12].children[0].value,
+          description3: xml.children[0].children[13].children[0].value,
+        })
+      } catch(err) {
+        setLoader(false)
+        console.log(err)
+      }
 
     })()
   },[])
 
   return(
-    <div className="newsColumn">
+    <>
+    {loader ? <Loader /> : <div className="newsColumn">
       <h2>{data.heading1}</h2>
       <p>
         {data.description1}
@@ -95,6 +102,7 @@ export function NewsColumn() {
         </div>
       </div>
       <hr />
-    </div>
+    </div>}
+    </>
   );
 }
