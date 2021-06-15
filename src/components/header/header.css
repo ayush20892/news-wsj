@@ -23,14 +23,14 @@ header > .main-heading {
 
 .main-heading > .page-heading > img {
   margin: 0.2rem 0;
-  width: 190px;
+  width: 210px;
 }
 
 .main-heading > .side-options {
   position: absolute;
   top: 0.6rem;
   right: 2rem;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: gray;
   cursor: pointer;
@@ -59,7 +59,7 @@ header > .menu-options {
 .menu-options > ul > li {
   display: inline;
   margin: 0 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: gray;
   cursor: pointer;
@@ -74,7 +74,7 @@ header > .menu-options {
   position: absolute;
   bottom: 0.2rem;
   right: 2rem;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: gray;
   cursor: pointer;
