@@ -1,6 +1,6 @@
 .newsColumn > h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: Escrow Condensed,Georgia,serif;
   cursor: pointer;
 }
@@ -12,7 +12,7 @@
 .newsColumn > p {
   margin: 0;
   margin-top: 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 300;
   font-family: Exchange,Georgia,serif;
   line-height: 18px;
@@ -21,13 +21,13 @@
 
 p > span {
   margin: 0 0.8rem;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 
 
 p > span > small {
   margin-left: 0.3rem;
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   position: relative;
   bottom: 0.2rem;
 }
@@ -50,7 +50,7 @@ p > span > small > span {
   color: black;
   margin: 0.2rem 0;
   font-weight: 600;
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   position: relative;
   bottom: 0.2rem;
   cursor: pointer;
