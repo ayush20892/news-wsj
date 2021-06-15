@@ -39,5 +39,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      if (typeof(stockdio_events) == "undefined") {
+         stockdio_events = true;
+         var stockdio_eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+         var stockdio_eventer = window[stockdio_eventMethod];
+         var stockdio_messageEvent = stockdio_eventMethod == "attachEvent" ? "onmessage" : "message";
+         stockdio_eventer(stockdio_messageEvent, function (e) {
+            if (typeof(e.data) != "undefined" && typeof(e.data.method) != "undefined") {
+               eval(e.data.method);
+            }
+         },false);
+      }
+   </script>
   </body>
 </html>

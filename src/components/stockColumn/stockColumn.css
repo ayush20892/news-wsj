@@ -1,3 +1,7 @@
 .stockColumn {
   margin: 0 0.5rem;
 }
+
+.tradingview-widget-container__widget {
+  width: 95%
+}
