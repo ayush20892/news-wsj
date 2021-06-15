@@ -1,0 +1,99 @@
+.abstractColumn > img {
+  margin: 0 2.5%;
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.abstractColumn > h2 {
+  margin: 0;
+  margin: 0.2rem 0;
+  font-family: Escrow Condensed,Georgia,serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.abstractColumn > h2:hover {
+  color: blue;
+}
+
+.abstractColumn > p {
+  margin: 0 0.6rem;
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-family: Exchange,Georgia,serif;
+  line-height: 18px;
+  color: #333;
+}
+
+.abstractColumn > hr {
+  border: none;
+  height: 0.5px;
+  background: lightgrey;
+  margin: 0 0.5rem;
+}
+
+
+.abstractColumn > .news-box {
+  display: flex;
+  margin: 0 0.6rem;
+  text-align: left;
+}
+
+.abstractColumn > .news-box > .new-text {
+  width: 65%
+}
+
+.abstractColumn > .news-box > .news-text > h2 {
+  margin: 0;
+  margin: 0.5rem 0;
+  font-family: Escrow Condensed,Georgia,serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.abstractColumn > .news-box > .news-text > h2:hover {
+  color: blue;
+}
+
+.abstractColumn > .news-box > .news-text > p {
+  margin: 0 0rem;
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-family: Exchange,Georgia,serif;
+  line-height: 18px;
+  color: #333;
+}
+
+.abstractColumn > .news-box > img {
+  width: 30%;
+  margin: 1.5%;
+  object-fit: cover;
+}
+
+.abstractColumn > ul {
+  margin: 0rem 0.5rem;
+  padding-left: 1.2rem;
+  color: grey;
+  font-size: 0.8rem;
+  line-height: 16px;
+  font-family: Exchange, georgia, times,serif;
+  text-align: left;
+}
+
+
+.abstractColumn > ul > li {
+  color: black;
+  margin: 0.2rem 0;
+  font-weight: 600;
+  font-size: 0.7rem;
+  position: relative;
+  bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.abstractColumn > ul > li:hover {
+  color: blue;
+}
