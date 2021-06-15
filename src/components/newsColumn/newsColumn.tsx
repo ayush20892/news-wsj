@@ -29,17 +29,17 @@ export function NewsColumn() {
         var xml = new XMLParser().parseFromString(feed.data);   
         setLoader(false)
         setData({
-          heading1: xml.children[0].children[8].children[0].value,
-          description1: xml.children[0].children[9].children[0].value,
-          point1: xml.children[0].children[14].children[0].value,
-          point2: xml.children[0].children[15].children[0].value,
-          point3: xml.children[0].children[16].children[0].value,
-          point4: xml.children[0].children[17].children[0].value,
-          heading2: xml.children[0].children[10].children[0].value,
+          heading1: xml.children[0].children[8].children[0].value.toString().split(">")[0],
+          description1: xml.children[0].children[9].children[0].value.toString().split(">")[0],
+          point1: xml.children[0].children[14].children[0].value.toString().split(">")[0],
+          point2: xml.children[0].children[15].children[0].value.toString().split(">")[0],
+          point3: xml.children[0].children[16].children[0].value.toString().split(">")[0],
+          point4: xml.children[0].children[17].children[0].value.toString().split(">")[0],
+          heading2: xml.children[0].children[10].children[0].value.toString().split(">")[0],
           image: xml.children[0].children[10].children[6].attributes.url,
-          description2: xml.children[0].children[11].children[0].value,
-          heading3: xml.children[0].children[12].children[0].value,
-          description3: xml.children[0].children[13].children[0].value,
+          description2: xml.children[0].children[11].children[0].value.toString().split(">")[0],
+          heading3: xml.children[0].children[12].children[0].value.toString().split(">")[0],
+          description3: xml.children[0].children[13].children[0].value.toString().split(">")[0],
         })
       } catch(err) {
         setLoader(false)
