@@ -23,7 +23,7 @@ header > .main-heading {
 
 .main-heading > .page-heading > img {
   margin: 0.2rem 0;
-  width: 230px;
+  width: 270px;
 }
 
 .main-heading > .side-options {
@@ -59,7 +59,7 @@ header > .menu-options {
 .menu-options > ul > li {
   display: inline;
   margin: 0 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: gray;
   cursor: pointer;
