@@ -3,7 +3,6 @@ import { BsClock } from "react-icons/bs"
 import { Loader } from "../loader/loader"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { isCatchClause } from "typescript"
 var XMLParser = require('react-xml-parser');
 
 
