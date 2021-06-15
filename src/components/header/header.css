@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+header {
+  font-family: Retina,Arial,Helvetica,sans-serif;
+}
+
+header > .main-heading {
+  display: flex;
+  position: relative;
+  margin: 0rem 0.5rem;
+  justify-content: center;
+}
+
+.main-heading > .page-heading {
+  cursor: pointer;
+  font-size: 0rem;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  
+}
+
+.main-heading > .page-heading > img {
+  margin: 0.2rem 0;
+  width: 190px;
+}
+
+.main-heading > .side-options {
+  position: absolute;
+  top: 0.6rem;
+  right: 2rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: gray;
+  cursor: pointer;
+}
+
+.main-heading > .side-options > .vertical-line {
+  border-left: 1px solid gray;
+}
+
+
+/* menu option */
+header > .menu-options {
+  display: flex;
+  position: relative;
+  margin: 0.1rem 0.5rem;
+  justify-content: center;
+}
+
+.menu-options > ul {
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  right: 1.8rem;
+}
+
+.menu-options > ul > li {
+  display: inline;
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: gray;
+  cursor: pointer;
+}
+
+.menu-options > ul > li:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.menu-options > .search-option {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 2rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: gray;
+  cursor: pointer;
+}
+
+header > hr {
+  border: none;
+  height: 1.5px;
+  background: lightgrey;
+}
