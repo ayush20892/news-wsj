@@ -35,12 +35,12 @@ export function AbstractColumn() {
           description1: xml.children[0].children[1].value.toString().split(">")[0],
           heading2: xml.children[0].children[9].children[0].value.toString().split(">")[0],
           image2: xml.children[0].children[9].children[6].attributes.url,
-          description2: xml.children[0].children[9].children[0].value.toString().split(">")[0],
-          point1: xml.children[0].children[10].children[0].value.toString().split(">")[0],
-          point2: xml.children[0].children[11].children[0].value.toString().split(">")[0],
-          point3: xml.children[0].children[12].children[0].value.toString().split(">")[0],
-          heading3: xml.children[0].children[13].children[0].value.toString().split(">")[0],
-          description3: xml.children[0].children[14].children[0].value.toString().split(">")[0],
+          description2: xml.children[0].children[10].children[0].value.toString().split(">")[0],
+          point1: xml.children[0].children[11].children[0].value.toString().split(">")[0],
+          point2: xml.children[0].children[12].children[0].value.toString().split(">")[0],
+          point3: xml.children[0].children[13].children[0].value.toString().split(">")[0],
+          heading3: xml.children[0].children[14].children[0].value.toString().split(">")[0],
+          description3: xml.children[0].children[15].children[0].value.toString().split(">")[0],
         })
       } catch(err) {
         setLoader(false)
