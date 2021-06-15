@@ -5,8 +5,6 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 var XMLParser = require('react-xml-parser');
 
-const image = "https://pbs.twimg.com/profile_images/1238749114348662784/p9hc5fuP_400x400.jpg"
-
 
 export function NewsColumn() {
   const [loader, setLoader] = useState(false)
