@@ -1,7 +1,7 @@
 .abstractColumn > img {
-  margin: 0 2.5%;
-  width: 95%;
-  height: 200px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
@@ -9,9 +9,13 @@
 .abstractColumn > h2 {
   margin: 0;
   margin: 0.2rem 0;
+  padding: 0 5px;
   font-family: Escrow Condensed,Georgia,serif;
-  font-size: 1.2rem;
   cursor: pointer;
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #222;
 }
 
 .abstractColumn > h2:hover {
@@ -21,10 +25,10 @@
 .abstractColumn > p {
   margin: 0 0.6rem;
   margin-top: 0.35rem;
-  font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Exchange,Georgia,serif;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333;
 }
 
@@ -52,6 +56,10 @@
   font-family: Escrow Condensed,Georgia,serif;
   font-size: 1.2rem;
   cursor: pointer;
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #222;
 }
 
 .abstractColumn > .news-box > .news-text > h2:hover {
@@ -60,40 +68,41 @@
 
 .abstractColumn > .news-box > .news-text > p {
   margin: 0 0rem;
-  margin-top: 0.2rem;
-  font-size: 0.75rem;
-  font-weight: 300;
+  margin: 0.2rem 0;
+  font-weight: 400;
   font-family: Exchange,Georgia,serif;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333;
 }
 
 .abstractColumn > .news-box > img {
   width: 30%;
-  margin: 1.5%;
+  margin: 0%;
   object-fit: cover;
   cursor: pointer;
 }
 
 .abstractColumn > ul {
-  margin: 0rem 0.5rem;
-  padding-left: 1.2rem;
-  color: grey;
-  font-size: 0.8rem;
-  line-height: 16px;
-  font-family: Exchange, georgia, times,serif;
   text-align: left;
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  color: grey;
+  line-height: 16px;
 }
 
 
 .abstractColumn > ul > li {
   color: black;
   margin: 0.2rem 0;
-  font-weight: 600;
-  font-size: 0.85rem;
   position: relative;
   bottom: 0.2rem;
   cursor: pointer;
+  font-family: Exchange, georgia, times, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", ＭＳＰゴシック, "MS PGothic", serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 550;
+  letter-spacing: -0.1px;
 }
 
 .abstractColumn > ul > li:hover {

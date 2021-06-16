@@ -22,18 +22,21 @@ header > .main-heading {
 }
 
 .main-heading > .page-heading > img {
-  margin: 0.2rem 0;
-  width: 270px;
+  margin: 0.4rem 0;
+  width: 224px;
 }
 
 .main-heading > .side-options {
   position: absolute;
-  top: 0.6rem;
-  right: 2rem;
-  font-size: 0.8rem;
+  top: 9px;
+  right: 10px;
   font-weight: 500;
-  color: gray;
+  font-size: 12px;
+  line-height: 12px;
+  color: #555;
   cursor: pointer;
+  left: auto;
+  height: 20px;
 }
 
 .main-heading > .side-options > .vertical-line {
@@ -51,23 +54,24 @@ header > .menu-options {
 
 .menu-options > ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   right: 1.8rem;
 }
 
 .menu-options > ul > li {
   display: inline;
-  margin: 0 0.5rem;
-  font-size: 0.95rem;
+  margin: 0 0.55rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  color: gray;
+  font-family: Retina,Arial,Helvetica,sans-serif;
+  color: #555;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .menu-options > ul > li:hover {
   color: black;
-  font-weight: bold;
 }
 
 .menu-options > .search-option {
@@ -84,4 +88,6 @@ header > hr {
   border: none;
   height: 1.5px;
   background: lightgrey;
+  margin: 0.5rem 0;
+  width: 1350px;
 }

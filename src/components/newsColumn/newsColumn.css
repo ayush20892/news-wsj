@@ -1,8 +1,11 @@
 .newsColumn > h2 {
   margin: 0;
-  font-size: 1.6rem;
+  color: #222;
   font-family: Escrow Condensed,Georgia,serif;
   cursor: pointer;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .newsColumn > h2:hover {
@@ -12,10 +15,10 @@
 .newsColumn > p {
   margin: 0;
   margin-top: 0.2rem;
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Exchange,Georgia,serif;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333;
 } 
 
@@ -27,33 +30,37 @@ p > span {
 
 p > span > small {
   margin-left: 0.3rem;
-  font-size: 0.6rem;
   position: relative;
-  bottom: 0.2rem;
+  bottom: 0.1rem;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 400;
 }
 
 p > span > small > span {
   position: relative;
-  bottom: 0.05rem;
+  bottom: 0.125rem;
 }
 
 .newsColumn > ul {
   margin: 0.5rem 0;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   color: grey;
-  font-size: 0.8rem;
   line-height: 16px;
-  font-family: Exchange, georgia, times,serif
 }
 
 .newsColumn > ul > li {
   color: black;
   margin: 0.2rem 0;
-  font-weight: 600;
-  font-size: 0.75rem;
   position: relative;
   bottom: 0.2rem;
   cursor: pointer;
+  font-family: Exchange, georgia, times, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", ＭＳＰゴシック, "MS PGothic", serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 550;
+  letter-spacing: -0.1px;
 }
 
 .newsColumn > ul > li:hover {
@@ -63,7 +70,7 @@ p > span > small > span {
 .newsColumn > hr {
   border: none;
   height: 0.5px;
-  background: lightgrey;
+  background: #ccc;
 }
 
 .newsColumn > .news-box > h3 {
@@ -84,10 +91,10 @@ p > span > small > span {
 .newsColumn > .news-box > .news-details-img > p {
   width: 55%;
   margin: 0;
-  font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Exchange,Georgia,serif;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333;
 }
 
@@ -95,14 +102,15 @@ p > span > small > span {
   width: 35%;
   object-fit: cover;
   cursor: pointer;
+  aspect-ratio: auto 110 / 73;
 }
 
 
 .news-box > .news-details > p {
   margin: 0;
-  font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Exchange,Georgia,serif;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   color: #333;
 }

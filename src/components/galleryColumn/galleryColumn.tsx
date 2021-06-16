@@ -54,7 +54,6 @@ export function GalleryColumn() {
           <span>4 min</span>
         </div>
       </div>
-      <hr />
 
       <div className="gallery-news">
         <img src={data.image2} alt=".." />
@@ -64,7 +63,6 @@ export function GalleryColumn() {
           <span>2 min</span>
         </div>
       </div>
-      <hr />
 
       <div className="gallery-news">
         <img src={data.image3} alt=".." />
@@ -74,7 +72,6 @@ export function GalleryColumn() {
           <span>4 min</span>
         </div>
       </div>
-      <hr />
 
       <div className="gallery-news">
         <img src={data.image4} alt=".." />
