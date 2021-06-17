@@ -84,9 +84,10 @@
 }
 
 .abstractColumn > ul {
+  list-style: none;
   text-align: left;
   margin: 0.5rem 0;
-  padding-left: 1rem;
+  padding-left: 30px;
   color: grey;
   line-height: 16px;
 }
@@ -105,6 +106,27 @@
   letter-spacing: -0.1px;
 }
 
+.abstractColumn > ul > li::before {
+  content: "•"; 
+  color: grey;
+  display: inline-block; 
+  font-size: 20px;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .abstractColumn > ul > li:hover {
   color: #0080c3;
+}
+
+.headline-hr {
+  display: inline-block;
+  position: relative;
+  content: "";
+  margin-top: 15px;
+  margin-left: 10.5px;
+  width: 125px;
+  height: 10px;
+  background-image: url(https://vir.wsj.net/fp/assets/webpack4/img/eyebrow.931ef682.svg);
+  background-repeat: no-repeat;
 }
