@@ -19,7 +19,6 @@ header > .main-heading {
 .main-heading > .page-heading {
   cursor: pointer;
   font-size: 0rem;
-  font-family: 'Abril Fatface', cursive;
   font-family: 'Old Standard TT', serif;
   font-weight: bold;
   
@@ -90,6 +89,7 @@ header > .menu-options {
   cursor: pointer;
 }
 
+
 .menu-options > ul > li:hover {
   color: black;
 }
@@ -97,7 +97,7 @@ header > .menu-options {
 .menu-options > .search-option {
   position: absolute;
   bottom: 0.2rem;
-  right: 0px;
+  right: 5px;
   font-size: 11px;
   font-weight: 400;
   color: #555;
