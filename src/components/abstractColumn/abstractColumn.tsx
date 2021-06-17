@@ -93,7 +93,7 @@ export function AbstractColumn() {
             <span>
               <BsClock style={{fontSize: "0.8rem"}}/> 
               <small>
-                <span>Long Read</span>
+                <span style={{position: "relative", top: "0.15rem"}}>Long Read</span>
               </small>
             </span>
           </p>
