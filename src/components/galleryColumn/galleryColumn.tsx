@@ -51,7 +51,7 @@ export function GalleryColumn() {
         <h2>{data.heading1}</h2>
         <div className="clock">
           <BsClock />
-          <span>4 min</span>
+          <span>4 min read</span>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export function GalleryColumn() {
         <h2>{data.heading2}</h2>
         <div className="clock">
           <BsClock />
-          <span>2 min</span>
+          <span>2 min read</span>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export function GalleryColumn() {
         <h2>{data.heading3}</h2>
         <div className="clock">
           <BsClock />
-          <span>4 min</span>
+          <span>4 min read</span>
         </div>
       </div>
 
@@ -78,7 +78,7 @@ export function GalleryColumn() {
         <h2>{data.heading4}</h2>
         <div className="clock">
           <BsClock />
-          <span>3 min</span>
+          <span>3 min read</span>
         </div>
       </div>
     </div>}
