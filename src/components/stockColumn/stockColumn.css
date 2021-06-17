@@ -1,3 +1,115 @@
 .stockColumn {
-  margin-left: 0.5rem;
+  margin-left: 10px;
+}
+
+.stockColumn > .stock-box {
+  width: 300px;
+  position: relative;
+  margin-bottom: 10px
+}
+
+.stock-box > .market-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.stock-box > .market-header > .market-type {
+  font-weight: 500;
+  color: #222; 
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Retina,Arial,sans-serif;
+}
+
+.stock-box > .market-graph {
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  text-align: right;
+  display: flex;
+}
+
+.stock-box > .market-graph > .market-chart {
+  width: 275px;
+  height: 120px;
+} 
+
+.stock-box > .market-graph > .market-dataframe {
+  width: 25px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  text-align: right;
+}
+
+.market-graph > .market-dataframe > .dataframe-time {
+  font-weight: 500;
+  font-size: 13px;
+  font-family: Retina,Arial,sans-serif;
+  line-height: 24px;
+  color: #222;
+  text-align: right;
+}
+
+.stockColumn > .market-instruments {
+  border-bottom: 1px solid #ccc;
+}
+
+.market-instruments > .market-data-wrapper {
+  border-bottom: 1px solid #ebebeb;
+  padding: 4px 0;
+  font-family: Retina Narrow,Retina,Arial Narrow,Arial,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 16px;
+  font-variant-numeric: tabular-nums;
+  color: #222;
+  display: flex;
+}
+
+.market-instruments > .bold-wrapper {
+  background-color: #f4f4f4;
+  font-weight: 700;
+}
+
+.market-instruments > .market-data-wrapper > .data-quote-name {
+  width: 120px;
+  text-align: left;
+}
+
+.market-data-wrapper > .quote-tick {
+  width: 70px;
+  text-align: right;
+}
+
+.market-data-wrapper > .quote-net {
+  color: #e10000;
+  width: 55px;
+  text-align: right;
+}
+
+.market-data-wrapper > .quote-percentage {
+  color: #e10000;
+  width: 55px;
+  text-align: right;
+}
+
+
+.stock-box > .stock-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock-box > .stock-footer > .footer-item {
+  margin-top: 5px;
+  display: block;
+  text-align: right;
+  color: #0274b6;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Retina,Arial,sans-serif;
+  cursor: pointer;
 }
