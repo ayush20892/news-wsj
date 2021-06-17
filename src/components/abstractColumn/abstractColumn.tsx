@@ -54,6 +54,7 @@ export function AbstractColumn() {
     {loader ? <Loader /> : <div className="abstractColumn">
       <img src={data.image1} alt=".." />
       <h2>{data.heading1}</h2>
+      <div className="headline-hr"></div>
       <p>
         {data.description1}
         <span>
