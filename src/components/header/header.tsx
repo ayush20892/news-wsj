@@ -10,8 +10,10 @@ export function Header() {
         <div className="page-heading">
           <img src={headerImage} alt="header" />
         </div>
+        
         <div className="side-options">
-          Subscribe &nbsp; <span className="vertical-line"></span> &nbsp;  Sign In
+          <span className="subscribe">Subscribe</span>
+          <span className="sign-in">Sign In</span>
         </div>
       </div>
       <div className="menu-options">
@@ -31,10 +33,9 @@ export function Header() {
           <li>Sports</li>
         </ul>
         <div className="search-option">
-          Search &nbsp; <IoSearchOutline style={{fontSize: "1rem", position: "relative", top: "0.3rem"}}/>
+          Search &nbsp; <IoSearchOutline style={{fontSize: "1.4rem", position: "relative", top: "0.5rem", fill: "#555"}}/>
         </div>
       </div>
-      <hr></hr>
     </header>
   );
 }
