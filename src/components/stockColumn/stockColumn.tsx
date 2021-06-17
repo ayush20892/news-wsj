@@ -1,23 +1,32 @@
 import "./stockColumn.css"
+import chartImage from "./chart.jpg";
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Loader } from "../loader/loader";
+import { IoIosArrowForward } from "react-icons/io"
 var XMLParser = require('react-xml-parser');
 
+
 export function StockColumn () {
+  const [loader, setLoader] = useState(false)
   useEffect(() => {
     (async () => {
       try { 
+        setLoader(true)
         let feed = await axios.get('https://rss.app/feeds/UV9AjfnZEQj0qrOC.xml');
         var xml = new XMLParser().parseFromString(feed.data);  
-        console.log(xml.children[0].children) 
+        setLoader(false)
+        // console.log(xml.children[0].children) 
       } catch(err) {
+        setLoader(false)
         console.log(err)
       }
 
     })()
   },[])
   return(
-    <div className="stockColumn">
+    <>
+    {loader ? <Loader /> : <div className="stockColumn">
       <div className="stock-box">
         <div className="market-header">
           <div className="market-type">US</div>
@@ -29,7 +38,7 @@ export function StockColumn () {
         </div>
         <div className="market-graph">
           <div className="market-chart">
-            
+            <img src={chartImage} alt="chart" />
           </div>
           <div className="market-dataframe">
             <div className="dataframe-time">
@@ -131,13 +140,11 @@ export function StockColumn () {
         </div>
       </div>
       <div className="opinion">
-        
+        <h2>OPINION</h2>
+        <IoIosArrowForward style={{position: "relative", top: "0.3rem", fontSize: "25px"}}/>
       </div>
-    </div>
+    </div>}
+    </>
   );
 }
 
-
-{/* <iframe id='st_818425f551bd4224b2785af3aa10203f' frameBorder='0' 
-      title="stock" scrolling='no' width='100%' height='100%' src='https://api.stockdio.com/visualization/financial/charts/v1/MarketOverviewChart?app-key=A70DF516523B438A9E175093BD6A3A94&palette=Financial-Light&title=Market%20Overview&onload=st_818425f551bd4224b2785af3aa10203f'>
-</iframe> */}

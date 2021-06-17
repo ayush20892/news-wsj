@@ -36,6 +36,11 @@
   height: 120px;
 } 
 
+.stock-box > .market-graph > .market-chart > img {
+  width: 100%;
+  height: 120px;
+}
+
 .stock-box > .market-graph > .market-dataframe {
   width: 25px;
   height: 120px;
@@ -112,4 +117,27 @@
   line-height: 22px;
   font-family: Retina,Arial,sans-serif;
   cursor: pointer;
+}
+
+
+.stockColumn > .opinion {
+  border-top: 1px solid #ebebeb;
+  color: #a28c6d;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  padding-top: 10px;
+  font-family: Retina Narrow,Retina,Arial Narrow,Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  position: relative;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.opinion > h2 {
+  margin: 0;
+  font-size: 18px;
 }
