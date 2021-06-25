@@ -22,19 +22,19 @@ export function GalleryColumn() {
     (async () => {
       try { 
         setLoader(true)
-        let feed = await axios.get('https://rss.app/feeds/UlmIWy7VEravys8Y.xml');
+        let feed = await axios.get('https://rss.app/feeds/YhukB80y5RRxBkX6.xml');
         var xml = new XMLParser().parseFromString(feed.data);   
 
         setLoader(false)
         setData({
-          heading1: xml.children[0].children[8].children[0].value.toString().split(">")[0],
-          image1: xml.children[0].children[8].children[6].attributes.url,
+          heading1: xml.children[0].children[11].children[0].value.toString().split(">")[0],
+          image1: xml.children[0].children[11].children[6].attributes.url,
           heading2: xml.children[0].children[12].children[0].value.toString().split(">")[0],
           image2: xml.children[0].children[12].children[6].attributes.url,
           heading3: xml.children[0].children[10].children[0].value.toString().split(">")[0],
           image3: xml.children[0].children[10].children[6].attributes.url,
-          heading4: xml.children[0].children[13].children[0].value.toString().split(">")[0],
-          image4: xml.children[0].children[13].children[6].attributes.url,
+          heading4: xml.children[0].children[9].children[0].value.toString().split(">")[0],
+          image4: xml.children[0].children[9].children[6].attributes.url,
         })
       } catch(err) {
         console.error(err)
