@@ -1,3 +1,7 @@
+Use rss.app and use two Goggle Search options 
+and use in news, abstract and gallery columns.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
