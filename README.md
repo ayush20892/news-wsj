@@ -1,5 +1,4 @@
-# Use rss.app and use two Goggle Search options 
-# and use in news, abstract and gallery columns.
+# Use rss.app and use two Goggle Search options and use in news, abstract and gallery columns.
 
 
 # Getting Started with Create React App
